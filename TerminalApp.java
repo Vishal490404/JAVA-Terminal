@@ -259,7 +259,7 @@ public class TerminalApp extends JFrame implements ActionListener, MouseWheelLis
                         "date - Display current date and time.\n" +
                         "open [website] - Open a website in the default web browser.\n" +
                         "calc - Open the calculator.\n" +
-                        "notepad - Open Notepad.\n" +
+                        "npad - Open Notepad.\n" +
                         "files - Open File Explorer.\n" +
                         "cls - Clear the commands.\n" +
                         "moodle - Open the WCE Moodle website.\n" +
