@@ -234,6 +234,26 @@ public class TerminalApp extends JFrame implements ActionListener, MouseWheelLis
                     e.printStackTrace();
                     return "Error: Unable to open Microsoft PowerPoint.";
                 }
+            case "shutdown":
+                try {
+                    ProcessBuilder shutdownProcess = new ProcessBuilder("shutdown", "/s", "/t", "0");
+                    shutdownProcess.start();
+                    return "Shutting down the PC...";
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    return "Error: Unable to shutdown the PC.";
+                }
+            
+            case "restart":
+                try {
+                    ProcessBuilder restartProcess = new ProcessBuilder("shutdown", "/r", "/t", "0");
+                    restartProcess.start();
+                    return "Restarting the PC...";
+                } catch (IOException e) {
+                    e.printStackTrace();
+                    return "Error: Unable to restart the PC.";
+                }
+            
             case "help":
                 return "Available commands(Commands are case insensitive):\n" +
                         "date - Display current date and time.\n" +
@@ -247,6 +267,8 @@ public class TerminalApp extends JFrame implements ActionListener, MouseWheelLis
                         "slogin - Open the WCE Student Login website.\n" +
                         "word - Open Microsoft Word.\n" +
                         "ppt - Open Microsoft PowerPoint.\n" +
+                        "shutdown - Shutdown the pc\n" +
+                        "restart - Restart the pc\n" +
                         "exit - Close the terminal.\n";
 
             default:
