@@ -244,7 +244,7 @@ public class TerminalApp extends JFrame implements ActionListener, MouseWheelLis
                         "cls - Clear the commands.\n" +
                         "moodle - Open the WCE Moodle website.\n" +
                         "erp - Open the WCE ERP website.\n" +
-                        "studentlogin - Open the WCE Student Login website.\n" +
+                        "slogin - Open the WCE Student Login website.\n" +
                         "word - Open Microsoft Word.\n" +
                         "ppt - Open Microsoft PowerPoint.\n" +
                         "exit - Close the terminal.\n";
