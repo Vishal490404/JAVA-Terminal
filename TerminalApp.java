@@ -166,7 +166,7 @@ public class TerminalApp extends JFrame implements ActionListener, MouseWheelLis
                     e.printStackTrace();
                     return "Error: Unable to open calculator.";
                 }
-            case "npad":
+            case "notes":
                 try {
                     List<String> commandList = new ArrayList<>();
                     commandList.add("notepad");
@@ -259,7 +259,7 @@ public class TerminalApp extends JFrame implements ActionListener, MouseWheelLis
                         "date - Display current date and time.\n" +
                         "open [website] - Open a website in the default web browser.\n" +
                         "calc - Open the calculator.\n" +
-                        "npad - Open Notepad.\n" +
+                        "notes - Open Notepad.\n" +
                         "files - Open File Explorer.\n" +
                         "cls - Clear the commands.\n" +
                         "moodle - Open the WCE Moodle website.\n" +
